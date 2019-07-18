@@ -7,60 +7,30 @@ from pymongo import MongoClient
 from bottle import route, run, request, abort
 import datetime
 import pprint
-#custom imports for summary API
-from totalOutstandingShares import totalOutstandingShares
-from industryTickers import industryLookupTickers
-from fiftyDayMoveAvg import count50DayMoveAvg
+
+from algorithm import compareLiveStockToStored
 
 #custom imports for CRUD updates
 from database import insert_mongodb, read_mongodb, update_mongodb, delete_mongodb
 
 
-#addional functionality
-from stockSummaryInfo import stockSummaryInfo
-from topFiveByIndustry import topFiveByIndustry
 
-#////////////////////////////////////Summary API URI\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+#////////////////////////////////////Algorithm API URI\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-
-# Route curl http://localhost:8008/outstanding_shares?sector="Healthcare"
-@route('/outstanding_shares', method='GET')
-def outstanding_shares():
+# Route curl http://localhost:8008/compare?ticker="A"
+@route('/compare', method='GET')
+def get_compare():
   try:
-    sector=request.query.sector
-    if sector: 
-      entity = dumps(totalOutstandingShares(sector))
+    ticker=request.query.ticker
+    if ticker: 
+      entity = compareLiveStockToStored(ticker)
+    if not entity:
+        abort(404, 'No document with id %s' % id)
   except NameError:
     abort(404, "No parameter")
-  return entity
+  return json.loads(json.dumps(entity, indent=4, default=json_util.default))
 
-# Route curl http://localhost:8008/industry_tickers?industry="Medical%20Laboratories%20%26%20Research"
-@route('/industry_tickers', method='GET')
-def industry_tickers():
-  try:
-    industry=request.query.industry
-    if industry: 
-      entity = dumps(industryLookupTickers(industry))
-      
-  except NameError:
-    abort(404, "No parameter")
-  return entity 
-
-# Route curl http://localhost:8008/50_day_move_avg?low="-0.0055"\&high="1"
-@route('/50_day_move_avg', method='GET')
-def fifty_day_move_avg():
-  try:
-    low = float(request.query.low)
-    high = float(request.query.high)
-    
-    if low and high: 
-      entity = int(count50DayMoveAvg(low, high))
-      result="{ Count: \""+str(entity)+"\", Low: \""+str(low)+"\", High: \""+str(high)+"\" }"
-      
-  except NameError:
-    abort(404, "No parameter")
-  return json.loads(json.dumps(result, indent=4, default=json_util.default)) + "\n"
-
+  
 
 #////////////////////////////////////CRUD API URI\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
@@ -131,30 +101,10 @@ def get_mongodbDelete():
 
 
 
-#////////////////////////////////////ADDITIONAL FUCNTIONS API URI\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-# Route curl http://localhost:8008/stock_summary?ticker="A"
-@route('/stock_summary', method='GET')
-def stock_summary():
-  try:
-    ticker=request.query.ticker
-    if ticker: 
-      entity = dumps(stockSummaryInfo(ticker))
-  except NameError:
-    abort(404, "No parameter")
-  return entity
 
-# Route curl http://localhost:8008/top_five?industry="Medical%20Laboratories%20%26%20Research"
-@route('/top_five', method='GET')
-def top_five():
-  try:
-    industry=request.query.industry
-    if industry: 
-      entity = dumps(topFiveByIndustry(industry))
-  except NameError:
-    abort(404, "No parameter")
-  return entity
 
+'''Starts the RESTful API on listening on port 8008'''
 
 if __name__ == '__main__': #declare instance of request
     #app.run(debug=True)
