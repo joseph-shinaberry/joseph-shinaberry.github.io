@@ -4,6 +4,8 @@ import datetime
 from bson import json_util
 from pymongo import MongoClient
 
+
+
 now = datetime.datetime.now()
 formatDate = now.strftime("%Y-%m-%d")
 
