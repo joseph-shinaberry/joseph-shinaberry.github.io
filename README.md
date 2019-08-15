@@ -2,6 +2,9 @@
 ## Mission Statement 
 Creating something that was not there before, from the spark of imagination -- generated into reality. With each character entered, and with each line saved -- closing in on the ultimate goal to create a solution to make someone’s life easier, more productive, and finally using technology to its fullest potential. My name is Joseph Shinaberry and I am a Software Developer. 
 
+## Self Assesment
+>“The secret of getting ahead is getting started. The secret of getting started is breaking your complex overwhelming tasks into small manageable tasks and starting on the first one.” - Mark Twain
+
 ## Code Review
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8OPQqoeDI14" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
