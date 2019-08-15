@@ -5,6 +5,10 @@ Creating something that was not there before, from the spark of imagination -- g
 ## Self Assesment
 >“The secret of getting ahead is getting started. The secret of getting started is breaking your complex overwhelming tasks into small manageable tasks and starting on the first one.” - Mark Twain
 
+Breaking down complex problems into modular and manageable blocks is what an experienced Software Developer such as myself, does on a daily basis. Throughout my journey through the Computer Science program at Southern New Hampshire University, I found that defining a solution for a complex problem was easily managed by breaking down the problem. For Example, a complex mathematical equation may not be solved by starting from left to right but by viewing the entire equation and following the proper order of operations. This is what one must do when creating a software solution, a typical novelist top-down approach is not applicable, and should be substituted for an agile and modular approach. 
+
+The values that I bring to the table are two-fold the first being highly motivated in my field of technology, and the undeterred drive to grow with knowledge in the industry. With the tech industry moving into the future with ever nanosecond staying current on technology is a requirement for any experienced Software Developer. 
+
 ## Code Review
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8OPQqoeDI14" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
