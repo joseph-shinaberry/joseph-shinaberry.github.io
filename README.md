@@ -100,6 +100,7 @@ Data is compaired and logic used to state outcome
 The third artifact is an example of the Stock Tracker program completely re-written into a LAMP stack. While the aforementioned artifacts are written in Python & JavaScript with MongoDB as the database. However, the new version is solely written in PHP language and uses MySQL as the database. I will compare the different languages involving database interaction as an example of different database interactions.
 
 ###  Database Narrative
+![LAMP Stack Architecture]({{ site.url }}/imgs/lamp.png)
 For the database portion of the artifact the entire Stock Market app is recoded into a different development stack. Linux, MySQL, Apache and PHP is the chosen stack that the file is recreated in. There is a main database file that handles all interaction with the database as well as create, read, update, and delete functions handled by separate php pages with html. 
 
 ***Table Creation***
