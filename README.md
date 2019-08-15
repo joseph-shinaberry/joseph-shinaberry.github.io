@@ -102,6 +102,20 @@ The third artifact is an example of the Stock Tracker program completely re-writ
 ###  Database Narrative
 For the database portion of the artifact the entire Stock Market app is recoded into a different development stack. Linux, MySQL, Apache and PHP is the chosen stack that the file is recreated in. There is a main database file that handles all interaction with the database as well as create, read, update, and delete functions handled by separate php pages with html. 
 
+***Table Creation**
+A schema is used in a relational database such as MySQL this is not used in the previous database type (MongoDB) which is a NoSQL database, therefore for this set up a schema is created.
+```php
+$sql = "CREATE TABLE Stocks (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+ticker VARCHAR(30) NOT NULL,
+price VARCHAR(30) NOT NULL,
+volume VARCHAR(50),
+date_entered TIMESTAMP
+)";
+```
+
+
+
 ***Create***
 ```php
 function create($conn, $ticker, $volume, $price){
