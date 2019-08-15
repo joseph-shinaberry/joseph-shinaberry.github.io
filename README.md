@@ -63,7 +63,8 @@ The second artifact also uses the Stock Tracker program as a starting point. The
 The added algorithms and data structures to the Stock Market app will determine the price of a stock stored to the live price to the stock at the program’s runtime. The API is called to an external service and then compares the prices using an algorithm then storing the information to a dictionary. The final solution is then printed to the screen that can be parsed into Json format. 
 
 ***Pulling Data from External API***
-getLiveStockData function grabs the data from stock data live from alpha vantage and imports the current stock price into the application. This uses an outside API that requires a unique key to connect to the API. 
+
+The getLiveStockData function in the [algorithm.py] (https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/6fd05edfd3564d36fae3544466fa73573b165404/Stock%20Application/algorithm.py#L1-L70) file grabs the data from stock data live from alpha vantage and imports the current stock price into the application. This uses an outside API that requires a unique key to connect to the API. 
 ```python
 def getLiveStockData(ticker):
 	'''KEY NO LONGER VALID USED AS EXAMPLE'''
