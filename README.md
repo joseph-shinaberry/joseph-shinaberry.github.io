@@ -64,7 +64,7 @@ The added algorithms and data structures to the Stock Market app will determine 
 
 ***Pulling Data from External API***
 
-The getLiveStockData function in the [algorithm.py] (https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/6fd05edfd3564d36fae3544466fa73573b165404/Stock%20Application/algorithm.py#L1-L70) file grabs the data from stock data live from alpha vantage and imports the current stock price into the application. This uses an outside API that requires a unique key to connect to the API. 
+The getLiveStockData function in the [algorithm.py](https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/6fd05edfd3564d36fae3544466fa73573b165404/Stock%20Application/algorithm.py#L1-L70) file grabs the data from stock data live from alpha vantage and imports the current stock price into the application. This uses an outside API that requires a unique key to connect to the API. 
 ```python
 def getLiveStockData(ticker):
 	'''KEY NO LONGER VALID USED AS EXAMPLE'''
