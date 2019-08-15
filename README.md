@@ -1,4 +1,8 @@
-## Welcome to GitHub Pages
+## Welcome To My ePortfolio
+# Mission Statement. 
+Creating something that was not there before, from the spark of imagination -- generated into reality. With each character entered, and with each line saved -- closing in on the ultimate goal to create a solution to make someone’s life easier, more productive, and finally using technology to its fullest potential. My name is Joseph Shinaberry and I am a Software Developer. 
+
+
 
 You can use the [editor on GitHub](https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
