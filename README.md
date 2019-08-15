@@ -102,5 +102,32 @@ The third artifact is an example of the Stock Tracker program completely re-writ
 ###  Database Narrative
 For the database portion of the artifact the entire Stock Market app is recoded into a different development stack. Linux, MySQL, Apache and PHP is the chosen stack that the file is recreated in. There is a main database file that handles all interaction with the database as well as create, read, update, and delete functions handled by separate php pages with html. 
 
+***Create ***
+```php
+function create($conn, $ticker, $volume, $price){
+	$sql = "INSERT INTO Stocks (ticker, volume, price) VALUES ('".$ticker."','".$volume."','".$price."')";
+	mysqli_query($conn, $sql);
+}
+```
+***Read***
+```php
+function read($conn, $ticker){
+	$sql = "SELECT * FROM Stocks WHERE ticker = '".$ticker."'";
+	return mysqli_query($conn, $sql);
+}
+```
 
-
+***Update***
+```php
+function update($conn, $ticker, $volume, $price){
+	$sql = "UPDATE Stocks SET volume = " .$volume . " , price = ".$price."  WHERE ticker = '".$ticker."'";
+	mysqli_query($conn, $sql);
+}
+```
+***Delete***
+```php
+function delete($conn, $ticker){
+	$sql = "DELETE FROM Stocks WHERE ticker = '".$ticker."'";
+	mysqli_query($conn, $sql);
+}
+```
