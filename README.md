@@ -57,6 +57,26 @@ The previous files that had been used to access the database have been created i
 # Artifact 2: Algorithms and Data Structures
 The second artifact also uses the Stock Tracker program as a starting point. The enhancements to this application include a data structure that holds JSON data from an external API kindly provided by Alpha Vantage. The live data is then compared to the stored data in the NoSQL database and compares the values with a custom algorithm.
 
+###  Algorithms and Data Structures Narrative
+![Example of Algorithm Architecture]({{ site.url }}/imgs/algor.png)
+
+The added algorithms and data structures to the Stock Market app will determine the price of a stock stored to the live price to the stock at the program’s runtime. The API is called to an external service and then compares the prices using an algorithm then storing the information to a dictionary. The final solution is then printed to the screen that can be parsed into Json format. 
+
+***Pulling Data from External API***
+def getLiveStockData(ticker):
+```python
+	''' getLiveStockData grabs the data from stock data live from alpha vantage and imports 
+	the live stock price into the application. This uses an outside API that requires a unique key '''
+	apikey = 'SO86DECTV0CVLVH5'
+	result = requests.get('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol='+ticker+'&apikey=' + apikey)
+
+	if result.status_code != 200: 
+		result = "Somthing went wrong"
+	else:
+		result = result.json()
+	return result
+```
+
 # Artifact 3: Databases
 The third artifact is an example of the Stock Tracker program completely re-written into a LAMP stack. While the aforementioned artifacts are written in Python & JavaScript with MongoDB as the database. However, the new version is solely written in PHP language and uses MySQL as the database. I will compare the different languages involving database interaction as an example of different database interactions.
 
