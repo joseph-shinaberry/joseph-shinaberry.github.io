@@ -51,6 +51,7 @@ def insert_mongodb(document):
       abort(400, str(ve))
     return result
 ```
+The previous files that had been used to access the database have been created into one single modular file that is both flexible and increases manageability. With a single file that accesses the database allows for increased security, as only one file has access to the database credentials and overall unit testing for database function may be performed on this single file. 
 
 
 # Artifact 2: Algorithms and Data Structures
