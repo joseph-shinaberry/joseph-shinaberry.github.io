@@ -29,10 +29,28 @@ The first artifact is a program known as the Stock Tracker program that was buil
 The idea behind this is to allow the application to become more modular therefore eliminating the need to several different files to perform a single task (accessing the database).
 
 The main [stockMarketRestfulAPI.py]({{ site.url }}/Stock Application/stockMarketRestfulAPI.py) file imports the [database.py]({{ site.url }}/Stock Application/database.py) file to import its functions:
-https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/366aeacff06e0aa21d77be8be846b0730d9dd683/Stock%20Application/stockMarketRestfulAPI.py#L13-L14
 
-**Example of Insert Function:**
-https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/acf75b2ed3e365f7826ff96423347d01fb2139aa/Stock%20Application/database.py#L10-L18
+```python
+#custom imports for CRUD updates
+from database import insert_mongodb, read_mongodb, update_mongodb, delete_mongodb
+```
+
+***Example of Insert Call From [stockMarketRestfulAPI.py]({{ site.url }}/Stock Application/stockMarketRestfulAPI.py)***
+```python
+result = insert_mongodb(entity)
+```
+This allows a single line of code in the main RESTful file, allowing the database file to do the heavy lifting as shown below. 
+
+**Example of Insert Function in [database.py]({{ site.url }}/Stock Application/database.py):**
+```python
+#insert into database 
+def insert_mongodb(document): 
+    try: 
+      result = collection.insert_one(document)
+    except ValidationError as ve:
+      abort(400, str(ve))
+    return result
+```
 
 
 # Artifact 2: Algorithms and Data Structures
