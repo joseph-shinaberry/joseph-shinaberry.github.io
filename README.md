@@ -11,10 +11,13 @@ The values that I bring to the table are two-fold the first being highly motivat
 
 Many sets of skills that I have acquired over the term of my experience as well as my time at Southern New Hampshire University include but not limited to; strong collaboration skills, detailed communication, software skills – software engineering, data structures and algorithms, databases, and proficiency in the following languages: PHP, C++, C#, Java, Python, JavaScript, Visual Basic, as well as SQL and NoSQL database language. 
 
-I have collaborated in a team’s requiring many skills including, strong communication, understanding your role, understanding software development lifecycles like Agile with Scrum among others such as Waterfall (iterative development) and Big Bang Model (explosive development) used for smaller teams.
+I have collaborated in a team’s requiring many skills including, strong communication, understanding your role, understanding software development lifecycles like Agile with Scrum among others such as Waterfall (iterative development) and Big Bang Model (explosive development) used for smaller teams. 
+
+Furthermore, I have had experience communication the developments to stakeholders, and product owners (Scrum based). This communication required direct, detailed and used little technical acronyms without sparing important elements. Visualizations were often used as shown in the artifacts below to demonstrate the process of the application. 
+
+Below are three artifacts that summarize the talent of software engineering, data structures and database skillset in various different languages. The narrative provides an example of an interaction between developers and ops in a DevOps environment as well as stakeholders. 
 
 ## Code Review
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8OPQqoeDI14" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
