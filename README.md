@@ -55,7 +55,7 @@ The previous files that had been used to access the database have been created i
 
 ### Associated Files
 - [stockMarketRestfulAPI.py](https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/d651d7c0849d589b53982400257cb51ebb8c40d7/Stock%20Application/stockMarketRestfulAPI.py#L1-L112)
--[database.py](https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/dbc5472185c4b1cd8097f48fac7e90f10bd21029/Stock%20Application/database.py#L1-L50)
+- [database.py](https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/dbc5472185c4b1cd8097f48fac7e90f10bd21029/Stock%20Application/database.py#L1-L50)
 
 
 # Artifact 2: Algorithms and Data Structures
@@ -102,8 +102,8 @@ Data is compaired and logic used to state outcome
 
 ### Associated Files
 - [stockMarketRestfulAPI.py](https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/d651d7c0849d589b53982400257cb51ebb8c40d7/Stock%20Application/stockMarketRestfulAPI.py#L1-L112)
-[algorithm.py](https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/6fd05edfd3564d36fae3544466fa73573b165404/Stock%20Application/algorithm.py#L1-L70)
--[database.py](https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/dbc5472185c4b1cd8097f48fac7e90f10bd21029/Stock%20Application/database.py#L1-L50)
+- [algorithm.py](https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/6fd05edfd3564d36fae3544466fa73573b165404/Stock%20Application/algorithm.py#L1-L70)
+- [database.py](https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/dbc5472185c4b1cd8097f48fac7e90f10bd21029/Stock%20Application/database.py#L1-L50)
 
 # Artifact 3: Databases
 The third artifact is an example of the Stock Tracker program completely re-written into a LAMP stack. While the aforementioned artifacts are written in Python & JavaScript with MongoDB as the database. However, the new version is solely written in PHP language and uses MySQL as the database. I will compare the different languages involving database interaction as an example of different database interactions.
