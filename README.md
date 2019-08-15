@@ -28,20 +28,20 @@ The first artifact is a program known as the Stock Tracker program that was buil
 ![Example of Software Engineer Architecture]({{ site.url }}/imgs/softeng.png)
 The idea behind this is to allow the application to become more modular therefore eliminating the need to several different files to perform a single task (accessing the database).
 
-The main [stockMarketRestfulAPI.py]({{ site.url }}/Stock Application/stockMarketRestfulAPI.py) file imports the [database.py]({{ site.url }}/Stock Application/database.py) file to import its functions:
+The main [stockMarketRestfulAPI.py](https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/d651d7c0849d589b53982400257cb51ebb8c40d7/Stock%20Application/stockMarketRestfulAPI.py#L1-L112) file imports the [database.py](https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/dbc5472185c4b1cd8097f48fac7e90f10bd21029/Stock%20Application/database.py#L1-L50) file to import its functions:
 
 ```python
 #custom imports for CRUD updates
 from database import insert_mongodb, read_mongodb, update_mongodb, delete_mongodb
 ```
 
-***Example of Insert Call From [stockMarketRestfulAPI.py]({{ site.url }}/Stock Application/stockMarketRestfulAPI.py)***
+***Example of Insert Call From [stockMarketRestfulAPI.py](https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/d651d7c0849d589b53982400257cb51ebb8c40d7/Stock%20Application/stockMarketRestfulAPI.py#L1-L112)***
 ```python
 result = insert_mongodb(entity)
 ```
 This allows a single line of code in the main RESTful file, allowing the database file to do the heavy lifting as shown below. 
 
-**Example of Insert Function in [database.py]({{ site.url }}/Stock Application/database.py):**
+**Example of Insert Function in [database.py](https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/dbc5472185c4b1cd8097f48fac7e90f10bd21029/Stock%20Application/database.py#L1-L50):**
 ```python
 #insert into database 
 def insert_mongodb(document): 
