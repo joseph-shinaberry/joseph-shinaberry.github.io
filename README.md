@@ -9,6 +9,10 @@ Breaking down complex problems into modular and manageable blocks is what an exp
 
 The values that I bring to the table are two-fold the first being highly motivated in my field of technology, and the undeterred drive to grow with knowledge in the industry. With the tech industry moving into the future with ever nanosecond staying current on technology is a requirement for any experienced Software Developer. 
 
+Many sets of skills that I have acquired over the term of my experience as well as my time at Southern New Hampshire University include but not limited to; strong collaboration skills, detailed communication, software skills – software engineering, data structures and algorithms, databases, and proficiency in the following languages: PHP, C++, C#, Java, Python, JavaScript, Visual Basic, as well as SQL and NoSQL database language. 
+
+I have collaborated in a team’s requiring many skills including, strong communication, understanding your role, understanding software development lifecycles like Agile with Scrum among others such as Waterfall (iterative development) and Big Bang Model (explosive development) used for smaller teams.
+
 ## Code Review
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8OPQqoeDI14" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
