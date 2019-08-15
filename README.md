@@ -67,7 +67,7 @@ def getLiveStockData(ticker):
 ```python
 	''' getLiveStockData grabs the data from stock data live from alpha vantage and imports 
 	the live stock price into the application. This uses an outside API that requires a unique key '''
-	apikey = 'SO86DECTV0CVLVH5'
+	apikey = 'SO86DECTV0CVLVH5' '''KEY NO LONGER VALID USED AS EXAMPLE'''
 	result = requests.get('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol='+ticker+'&apikey=' + apikey)
 
 	if result.status_code != 200: 
