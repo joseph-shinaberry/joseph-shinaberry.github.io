@@ -76,6 +76,24 @@ def getLiveStockData(ticker):
 		result = result.json()
 	return result
 ```
+The values are then stored into a data structure for comparison. 
+
+```python
+	#dictionary data structures 
+	dictStructTicker = {"Ticker" : ticker}
+	dictStructReturn = {"Price": 1, "_id": 0 }
+```
+Data is compaired and logic used to state outcome
+```python
+	live = getLiveStockData(ticker)
+	livePrice = live['Time Series (Daily)'][formatDate]['1. open']
+   	
+   	if stored['Price'] > livePrice:
+   		result = "Stock Price is now lower than stored - Stored: " + str(stored['Price']) + " Live " + str(livePrice)
+    	else:
+		result = "Stock Price is now higher than stored - Stored: " + str(stored['Price']) + " Live " + str(livePrice)
+    	return result
+```
 
 # Artifact 3: Databases
 The third artifact is an example of the Stock Tracker program completely re-written into a LAMP stack. While the aforementioned artifacts are written in Python & JavaScript with MongoDB as the database. However, the new version is solely written in PHP language and uses MySQL as the database. I will compare the different languages involving database interaction as an example of different database interactions.
