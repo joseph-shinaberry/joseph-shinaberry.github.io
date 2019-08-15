@@ -53,7 +53,7 @@ def insert_mongodb(document):
 ```
 The previous files that had been used to access the database have been created into one single modular file that is both flexible and increases manageability. With a single file that accesses the database allows for increased security, as only one file has access to the database credentials and overall unit testing for database function may be performed on this single file. 
 
-### Assocaited Files
+### Associated Files
 - [stockMarketRestfulAPI.py](https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/d651d7c0849d589b53982400257cb51ebb8c40d7/Stock%20Application/stockMarketRestfulAPI.py#L1-L112)
 -[database.py](https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/dbc5472185c4b1cd8097f48fac7e90f10bd21029/Stock%20Application/database.py#L1-L50)
 
@@ -100,7 +100,7 @@ Data is compaired and logic used to state outcome
     	return result
 ```
 
-### Assocaited Files
+### Associated Files
 - [stockMarketRestfulAPI.py](https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/d651d7c0849d589b53982400257cb51ebb8c40d7/Stock%20Application/stockMarketRestfulAPI.py#L1-L112)
 [algorithm.py](https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/6fd05edfd3564d36fae3544466fa73573b165404/Stock%20Application/algorithm.py#L1-L70)
 -[database.py](https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/dbc5472185c4b1cd8097f48fac7e90f10bd21029/Stock%20Application/database.py#L1-L50)
@@ -157,11 +157,11 @@ function delete($conn, $ticker){
 	mysqli_query($conn, $sql);
 }
 ```
-### Assocaited Files
--[database.php](https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/61fa6f198eef50c99fa2796aaa1e43ed9be5df3e/Stock%20Application/Stock%20Application%20PHP/database.php#L1-L70)
--[create_tables.php](https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/26ed244e5b046efd67beef291448c3d7f4ae8469/Stock%20Application/Stock%20Application%20PHP/create_tables.php#L1-L16)
--[index.php](https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/26ed244e5b046efd67beef291448c3d7f4ae8469/Stock%20Application/Stock%20Application%20PHP/index.php#L1-L147) -- Create View
--[read.php](https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/26ed244e5b046efd67beef291448c3d7f4ae8469/Stock%20Application/Stock%20Application%20PHP/read.php#L1-L140) -- Read View
--[update.php](https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/26ed244e5b046efd67beef291448c3d7f4ae8469/Stock%20Application/Stock%20Application%20PHP/update.php#L1-L146) -- Update View
--[delete.php](https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/26ed244e5b046efd67beef291448c3d7f4ae8469/Stock%20Application/Stock%20Application%20PHP/delete.php#L1-L121) -- Delete View
+### Associated Files
+- [database.php](https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/61fa6f198eef50c99fa2796aaa1e43ed9be5df3e/Stock%20Application/Stock%20Application%20PHP/database.php#L1-L70)
+- [create_tables.php](https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/26ed244e5b046efd67beef291448c3d7f4ae8469/Stock%20Application/Stock%20Application%20PHP/create_tables.php#L1-L16)
+- [index.php](https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/26ed244e5b046efd67beef291448c3d7f4ae8469/Stock%20Application/Stock%20Application%20PHP/index.php#L1-L147) -- Create View
+- [read.php](https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/26ed244e5b046efd67beef291448c3d7f4ae8469/Stock%20Application/Stock%20Application%20PHP/read.php#L1-L140) -- Read View
+- [update.php](https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/26ed244e5b046efd67beef291448c3d7f4ae8469/Stock%20Application/Stock%20Application%20PHP/update.php#L1-L146) -- Update View
+- [delete.php](https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/26ed244e5b046efd67beef291448c3d7f4ae8469/Stock%20Application/Stock%20Application%20PHP/delete.php#L1-L121) -- Delete View
 
