@@ -7,6 +7,12 @@ Creating something that was not there before, from the spark of imagination -- g
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8OPQqoeDI14" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
+# Artifact 1: Software Engineering / Design
+The first artifact is a program known as the Stock Tracker program that was built for CS-340 Advanced Programming Concepts and is a combination of logic, user interface, and NoSQL database structuring. I altered the architecture to all the code to become more modular, the previous architecture of the application contained redundant code that connected to the database from all files. This was a security risk and had to be mitigated by creating a single file that handled database requests. 
+
+
+
+
 You can use the [editor on GitHub](https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
