@@ -2,7 +2,7 @@
 ## Mission Statement 
 Creating something that was not there before, from the spark of imagination -- generated into reality. With each character entered, and with each line saved -- closing in on the ultimate goal to create a solution to make someone’s life easier, more productive, and finally using technology to its fullest potential. My name is Joseph Shinaberry and I am a Software Developer. 
 
-## Self Assessment
+## Self-Assessment
 >“The secret of getting ahead is getting started. The secret of getting started is breaking your complex overwhelming tasks into small manageable tasks and starting on the first one.” - Mark Twain
 
 Breaking down complex problems into modular and manageable blocks is what an experienced Software Developer such as myself, does on a daily basis. Throughout my journey through the Computer Science program at Southern New Hampshire University, I found that defining a solution for a complex problem was easily managed by breaking down the problem. For Example, a complex mathematical equation may not be solved by starting from left to right but by viewing the entire equation and following the proper order of operations. This is what one must do when creating a software solution, a typical novelist top-down approach is not applicable, and should be substituted for an agile and modular approach. 
@@ -126,7 +126,7 @@ date_entered TIMESTAMP
 ```
 
 ***[database.php](https://github.com/joseph-shinaberry/joseph-shinaberry.github.io/blob/61fa6f198eef50c99fa2796aaa1e43ed9be5df3e/Stock%20Application/Stock%20Application%20PHP/database.php#L1-L70) Database - CRUD***
-controls all database interaction with Mysql known as CRUD or Create, Read, Update, Delete.
+controls all database interaction with MySQL known as CRUD or Create, Read, Update, Delete.
 
 ***Create***
 ```php
