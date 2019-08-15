@@ -15,6 +15,6 @@ The first artifact is a program known as the Stock Tracker program that was buil
 The second artifact also uses the Stock Tracker program as a starting point. The enhancements to this application include a data structure that holds JSON data from an external API kindly provided by Alpha Vantage. The live data is then compared to the stored data in the NoSQL database and compares the values with a custom algorithm.
 
 # Artifact 3: Databases
-The third artifact is an example of the Stock Tracker program completely re-written into a LAMP stack. While the aforementioned artifacts are written in Python & JavaScript with MongoDB as the database. However, the new version is solely written in PHP language and uses MySQL as the database. I will compaire the different langues involving database interaction as a example of different database interactions.
+The third artifact is an example of the Stock Tracker program completely re-written into a LAMP stack. While the aforementioned artifacts are written in Python & JavaScript with MongoDB as the database. However, the new version is solely written in PHP language and uses MySQL as the database. I will compare the different languages involving database interaction as an example of different database interactions.
 
 
