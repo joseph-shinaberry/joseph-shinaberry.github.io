@@ -1,6 +1,6 @@
 # Welcome To Joseph Shinaberry's ePortfolio
 ## Mission Statement 
-Creating something that was not there before, from the spark of imagination -- generated into reality. With each character entered, and with each line saved -- closing in on the ultimate goal to create a solution to make someone’s life easier, more productive, and finally using technology to its fullest potential. My name is Joseph Shinaberry and I am a Software Developer. 
+Creating something that was not there before, from the spark of imagination -- generated into reality. With each character entered, and with each line saved -- closing in on the ultimate goal to create a solution to make someone’s life easier, more productive, and finally: using technology to its fullest potential. My name is Joseph Shinaberry and I am a Software Developer. 
 
 ## Self-Assessment
 >“The secret of getting ahead is getting started. The secret of getting started is breaking your complex overwhelming tasks into small manageable tasks and starting on the first one.” - Mark Twain
