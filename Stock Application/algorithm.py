@@ -26,7 +26,7 @@ def getLiveStockData(ticker):
 
 	if result.status_code != 200: 
 		
-		result = "Somthing went wrong"
+		result = "Something went wrong"
 	
 	else:
 		
@@ -61,10 +61,3 @@ def compareLiveStockToStored(ticker):
 
     	return result
 
-
-#test main // to be deleted later. 
-def main():
-	
-	print compareLiveStockToStored('A')
-
-main()
